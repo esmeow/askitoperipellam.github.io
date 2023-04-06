@@ -1,0 +1,142 @@
+/* Font styles */
+body {
+    font-family: "Times New Roman", serif;
+}
+
+h1, h2, h3 {
+    font-family: "Gabriela", serif;
+}
+
+/* Color styles */
+body {
+    color: #333;
+    background-color: #FFECF2;
+}
+
+h1, h2, h3 {
+    color: #D92C53;
+}
+
+a {
+    color: #D92C53;
+}
+
+a:hover {
+    color: #F5AEB1;
+}
+
+/* Layout styles */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #FFF;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #D92C53;
+}
+
+
+.navigation {
+    background-color: #D92C53;
+    padding: 10px;
+    text-align: center;
+}
+
+.navigation a {
+    color: #FFF;
+    margin: 0 10px;
+}
+
+.content {
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.footer {
+    background-color: #D92C53;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Background image */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("C:\Users\Esma\Desktop\dosya\cute.jpg"); /* replace with your own image */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+/* Border styles */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #D92C53;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+ul li:before {
+    content: "";
+    padding-right: 5px;
+}
+
+/* Form styles */
+input[type="text"], input[type="email"], textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #D92C53;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #D92C53;
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #F5AEB1;
+}
+.loader {
+    border: 16px solid #a49c9c; 
+    border-top: 16px solid #E81224; 
+    border-radius: 75%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  body {
+    border: 10px dotted pink;
+  }
